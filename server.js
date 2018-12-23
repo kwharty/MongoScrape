@@ -1,6 +1,12 @@
 //  window.onload = function( {
 //    console.log('All assets are loaded');
 
+
+
+//KEEP GETTING ERRORS WITHIN THE JQUERY. TRIED NPM AND OTHER SOLUTIONS.
+// $(document).ready(function() {
+
+
 var cheerio = require("cheerio");
 var axios = require("axios");
 
@@ -42,7 +48,7 @@ console.log("\n***********************************\n" +
         link: link
       });
 
-      $("#articles").append(results.title);
+      $("#articles").append("<b>results.title</b>");
       $("#notes").append(results.link);
     });
 
@@ -53,3 +59,4 @@ console.log("\n***********************************\n" +
   });
 
 // });
+
